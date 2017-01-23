@@ -1,0 +1,10 @@
+version: '2'
+services:
+  alb-registrar:
+    build:
+      context: .
+    environment: 
+      URL: ${URL}
+    stdin_open: true
+    tty: true
+  
